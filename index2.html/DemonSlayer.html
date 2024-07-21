@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DemonSlayer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General body styles */
+        body {
+            margin: 0;
+            font-family: 'Roboto', Arial, sans-serif;
+            color: white;
+            overflow: hidden; /* Hide scrollbars for full-screen video */
+        }
+
+        /* Video background */
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensure video covers the area */
+            z-index: -1; /* Place video behind other content */
+        }
+
+        /* Header styles */
+        header {
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            text-align: left;
+            margin-bottom: 10px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1; /* Ensure header is above the video */
+        }
+
+        /* Navigation styles */
+        nav {
+            text-align: right;
+        }
+        nav a {
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 8px 15px;
+            border-radius: 40px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+            color: #FFF;
+            background-color: rgba(255, 255, 255, 0);
+            font-size: 0.9em;
+            transition: background-color 0.3s, color 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            transform: scale(1.05);
+            background-color: #467fd4;
+            color: #FFF;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            color: #FFD700;
+            font-family: 'Bangers', cursive;
+            animation: colorchange 3s infinite alternate;
+            margin: 0;
+        }
+
+        @keyframes colorchange {
+            0% { color: #be8a4f; }
+            50% { color: #4777f3; }
+            100% { color: #8eafd4; }
+        }
+
+        /* Main content container */
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center the content vertically */
+            height: calc(100vh - 80px); /* Adjust height to fit viewport, subtract header height */
+            padding: 20px;
+        }
+
+        /* Container for all section rows */
+        .sections-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px; /* Space between rows */
+            height: 100%;
+            overflow-y: auto; /* Allow scrolling if content overflows */
+        }
+
+        /* Container for each row of sections */
+        .section-row {
+            display: flex;
+            flex: 1;
+            gap: 20px; /* Space between sections */
+            justify-content: center; /* Center sections horizontally in each row */
+        }
+
+        /* Individual section styles */
+        section {
+            width: 20%; /* Adjusted width for smaller squares */
+            height: 0;
+            padding-bottom: 20%; /* Maintain aspect ratio (square) */
+            background-color: rgba(0, 0, 0, 0.6); /* More transparent */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            margin: 0;
+            text-align: center;
+            box-sizing: border-box;
+            position: relative;
+            
+        }
+
+        /* Title and content styling */
+        .section-title {
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.5em; /* Smaller font size for titles */
+            color: #e78f25;
+            margin-bottom: 10px;
+        }
+
+        .section-content {
+            font-size: 1.0em; /* Smaller font size for content */
+            margin-bottom: 10px;
+            color: #b9eafd;
+            font-family: 'Raleway', sans-serif;
+            font-weight: bold;
+        }
+
+        /* Button styling */
+        .button {
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #1f4e9482;
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+            position:absolute;
+            bottom: 50px;
+            left: 70px;
+            border-radius: 15px;
+        }
+
+        .button:hover {
+            background-color: #467fd4;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <video class="video-background" autoplay muted loop>
+        <source src="My website/img-vid/tanjiro-water-dragon-kimetsu-no-yaiba-moewalls-com.mp4" type="video/mp4"> <!-- Replace with your video file -->
+        Your browser does not support the video tag.
+    </video>
+
+    <header>
+        <h1>DemonSlayer all season 1-4</h1>
+        <nav>
+            <a href="Home page.html" class="home" >HOME</a>
+            <a href="About Us.html" class="about" title="About Us">ABOUT</a>
+            <a href="Contact us.html" class="contact" title="Contact">CONTACT</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="sections-container">
+            <div class="section-row">
+                <section id="Season-1">
+                    <h2 class="section-title">Season-1</h2>
+                    <p class="section-content">Click The Button Below To Download Season-1</p>
+                    <a href="https://fxlinks.lol/elinks/dex42077/" class="button">Season-1</a>
+                </section>
+        
+                <section id="Season-2">
+                    <h2 class="section-title">Season-2</h2>
+                    <p class="section-content">Click The Button Below To Download Season-2</p>
+                    <a href="https://fxlinks.lol/elinks/dex42077/" class="button">Season-2</a>
+                </section>
+
+                <section id="Season-3">
+                    <h2 class="section-title">Season-3</h2>
+                    <p class="section-content">Click The Button Below To Download Season-3</p>
+                    <a href="https://fxlinks.lol/elinks/dex42077/" class="button">Season-3</a>
+                </section>
+
+                <section id="Season-2">
+                    <h2 class="section-title">Season-4</h2>
+                    <p class="section-content">Click The Button Below To Download Season-4</p>
+                    <a href="https://fxlinks.lol/elinks/dex42077/" class="button">Season-4</a>
+                </section>
+        
+                </div>
+            </div>
+        </body>
+        </html>
